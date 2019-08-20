@@ -1,9 +1,11 @@
 {
     "scripts": {
         "test": "mocha test",
-        "test:coverage": "nyc npm test"
+        "test:coverage": "nyc npm test",
+        "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
     },
     "dependencies": {
+        "cowsay": "^1.4.0",
         "mocha": "^6.2.0",
         "nyc": "^14.1.1",
         "sinon": "^7.4.1"
